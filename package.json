@@ -1,0 +1,18 @@
+{
+  "name": "vz.yieldify",
+  "version": "0.0.0",
+  "description": "Convert asynchronous methods into yielding functions",
+  "main": "main.js",
+  "dependencies": {
+    "vz.yielded": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manvalls/vz.yieldify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manvalls/vz.yieldify/issues"
+  },
+  "author": "Manuel Valls Fernández <manolo@chatiku.com>",
+  "license": "LGPL-3.0"
+}
