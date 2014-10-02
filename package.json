@@ -1,6 +1,6 @@
 {
   "name": "vz.yieldify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert asynchronous methods into yielding functions",
   "main": "main.js",
   "dependencies": {
