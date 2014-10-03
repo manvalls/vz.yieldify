@@ -14,3 +14,19 @@ module.exports = function(method,thisArg){
   };
 };
 
+module.exports.promise = function(method,thisArg){
+  return function(){
+    var ret = new Yielded();
+    
+    method.apply(thisArg || this,arguments).then(function(v){
+      ret.value = v;
+    },function(e){
+      ret.error = e;
+    },function(p){
+      ret.fire('progress',p).resolve();
+    });
+    
+    return ret;
+  };
+};
+
